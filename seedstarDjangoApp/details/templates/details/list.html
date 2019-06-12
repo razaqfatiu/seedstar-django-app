@@ -10,9 +10,23 @@
     <h1>List of all datas</h1>
     <ul>
         {% for detail in details %}
-        <li>
-            {{detail}}
-        </li>
+        <table style="border: 1px solid black;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">S/N</th>
+                <th style="border: 1px solid black;">Full Name</th>
+                <th style="border: 1px solid black;">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">{{detail.id}}</td>
+                <td style="border: 1px solid black;">{{detail.name}} </td>
+                <td style="border: 1px solid black;">{{detail.email}}</td>
+            </tr>
+        </tbody>
+            
+        </table>
 
         {% endfor %}
     </ul>

@@ -8,6 +8,7 @@
 </head>
 <body style="margin: 100px">
     <form action="" method="POST">
+        {% csrf_token %}
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" required> <br>
     <label for="email">Email:</label>
